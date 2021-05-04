@@ -1,8 +1,8 @@
 tickets = int(input('Введите количество билетов '))
-T = [i for i in range(tickets)]
+T = [i for i in range(1, tickets)]
 P = []
 for i in T:
-    age = int(input(f'Введите возраст {i + 1} человека '))
+    age = int(input(f'Введите возраст {i}-го человека '))
     if age < 18:
         price = 0
     elif 18 < age < 25:
